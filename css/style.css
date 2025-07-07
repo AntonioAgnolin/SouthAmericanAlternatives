@@ -85,13 +85,22 @@ ul {
 
 header {
   background-color: #1f2161;
-  color: #fff;
-  padding: 20px 20px;
+  color: #ffffff;
+  padding: 20px 20px 20px 20px;
   margin-top: 0;
   width: 100%;
   top: 0;
   left: 0;
   border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+header p {
+  color: #ffffff;
 }
 
 header nav ul {
@@ -114,10 +123,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #58acff;
-}
-
-header p {
-  color: #ffffff;
 }
 
 .language-switcher {
@@ -225,45 +230,80 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  body {
-    font-size: 14px;
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
   }
 
   header {
     padding: 10px 20px;
+    text-align: center;
   }
 
-  h1 {
+  header h1 {
+    margin-left: 0;
     font-size: 1.5rem;
   }
 
-  h2, h3 {
-    font-size: 1.2rem;
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  header nav ul li {
+    margin: 0 15px;
+  }
+
+  header nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  section {
+    text-align: center;
   }
 
   section h3 {
     font-size: 1.3rem;
+    margin-bottom: 15px;
   }
 
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
+  section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
   }
 
-  .language-switcher {
+  article {
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  article h3 {
+    font-size: 1.3rem;
+  }
+
+  article p {
+    font-size: 1rem;
+  }
+
+  footer {
     text-align: center;
-  }
-
-  li {
-    font-size: 0.9rem;
-  }
-
-  .language-switcher a {
-    font-size: 0.9rem;
+    padding: 20px 10px;
   }
 
   footer p {
     font-size: 0.8rem;
   }
 
+  .language-switcher {
+    text-align: center;
+  }
+
+  .language-switcher a {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
 }
