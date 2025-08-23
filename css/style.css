@@ -40,6 +40,17 @@ p {
   padding-left: 25px;
 }
 
+p a {
+  color: #1f2161;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+  color: #3a3b8f;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
